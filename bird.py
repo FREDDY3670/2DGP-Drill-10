@@ -8,6 +8,7 @@ FRAMES_PER_ACTION = 14
 
 PIXEL_PER_METER = (10.0 / 0.3)
 RUN_SPEED_KMPH = 40.0
+RUN_SPEED_MPM = (RUN_SPEED_KMPH * 1000.0 / 60.0)
 
 class Bird:
     image = None
