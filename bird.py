@@ -7,6 +7,7 @@ class Bird:
             Bird.image = load_image('bird_animation.png')
         self.x = 800
         self.y = 500
+        self.frame = 0
     def update(self):
         pass
     def draw(self):
