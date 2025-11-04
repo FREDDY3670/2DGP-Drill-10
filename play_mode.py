@@ -1,5 +1,6 @@
 from pico2d import *
 
+from bird import Bird
 from boy import Boy
 from grass import Grass
 import game_world
@@ -20,10 +21,6 @@ def handle_events():
             game_framework.quit()
         else:
             boy.handle_event(event)
-
-
-class Bird:
-    pass
 
 
 def init():
