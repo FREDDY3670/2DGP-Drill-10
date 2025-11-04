@@ -14,11 +14,11 @@ RUN_SPEED_PPS = (RUN_SPEED_MPS * PIXEL_PER_METER)
 
 class Bird:
     image = None
-    def __init__(self):
+    def __init__(self,x,y):
         if Bird.image == None:
             Bird.image = load_image('bird_animation.png')
-        self.x = 800
-        self.y = 500
+        self.x = x
+        self.y = y
         self.frame = 0
         self.dir = 1
     def update(self):
