@@ -29,5 +29,8 @@ class Bird:
         elif self.x <= 0:
             self.dir = 1
     def draw(self):
-        self.image.clip_draw((int(self.frame) % 5) * 183,(2 - (int(self.frame) // 5)) * 168,183,168,self.x,self.y,75,75)
+        if self.dir == 1:
+            self.image.clip_draw((int(self.frame) % 5) * 183,(2 - (int(self.frame) // 5)) * 168,183,168,self.x,self.y,75,75)
+        else:
+            self.image.clip_composite_draw((int(self.frame) % 5) * 183,(2 - (int(self.frame) // 5)) * 168,183,168,0,'h',self.x,self.y,75,75)
 
