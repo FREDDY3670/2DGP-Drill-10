@@ -21,6 +21,11 @@ def handle_events():
         else:
             boy.handle_event(event)
 
+
+class Bird:
+    pass
+
+
 def init():
     global boy
     global running
