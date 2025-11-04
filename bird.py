@@ -24,6 +24,10 @@ class Bird:
     def update(self):
         self.frame = (self.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % 14
         self.x += self.dir * RUN_SPEED_PPS * game_framework.frame_time
+        if self.x >= 1600:
+            self.dir = -1
+        elif self.x <= 0:
+            self.dir = 1
     def draw(self):
         self.image.clip_draw((int(self.frame) % 5) * 183,(2 - (int(self.frame) // 5)) * 168,183,168,self.x,self.y,75,75)
 
