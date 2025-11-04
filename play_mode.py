@@ -1,3 +1,5 @@
+import random
+
 from pico2d import *
 
 from bird import Bird
@@ -37,6 +39,10 @@ def init():
     game_world.add_object(boy, 1)
 
     birds = []
+    for i in range (10):
+        b = Bird(800 + random.randint(-200,200),500)
+        game_world.add_object(b, 1)
+        birds.append(b)
 
 def update():
     game_world.update()
