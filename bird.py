@@ -1,5 +1,9 @@
 from pico2d import *
 
+TIME_PER_ACTION = 0.5
+ACTION_PER_TIME = 1.0 / TIME_PER_ACTION
+FRAMES_PER_ACTION = 14
+
 class Bird:
     image = None
     def __init__(self):
