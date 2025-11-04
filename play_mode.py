@@ -24,6 +24,7 @@ def handle_events():
 def init():
     global boy
     global running
+    global bird
 
     running = True
     grass = Grass()
@@ -31,6 +32,8 @@ def init():
 
     boy = Boy()
     game_world.add_object(boy, 1)
+
+    bird = Bird()
 
 def update():
     game_world.update()
