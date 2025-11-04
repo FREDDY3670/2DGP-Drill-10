@@ -6,6 +6,8 @@ TIME_PER_ACTION = 0.3
 ACTION_PER_TIME = 1.0 / TIME_PER_ACTION
 FRAMES_PER_ACTION = 14
 
+PIXEL_PER_METER = (10.0 / 0.3)
+
 class Bird:
     image = None
     def __init__(self):
