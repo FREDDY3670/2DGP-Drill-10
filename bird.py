@@ -10,5 +10,5 @@ class Bird:
     def update(self):
         pass
     def draw(self):
-        pass
+        self.image.clip_draw(183,168,183,168,self.x,self.y,75,75)
 
