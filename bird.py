@@ -13,7 +13,7 @@ class Bird:
         self.y = 500
         self.frame = 0
     def update(self):
-        pass
+        self.frame = (self.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % 14
     def draw(self):
         self.image.clip_draw(183,168,183,168,self.x,self.y,75,75)
 
