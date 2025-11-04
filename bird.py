@@ -5,6 +5,8 @@ class Bird:
     def __init__(self):
         if Bird.image == None:
             Bird.image = load_image('bird_animation.png')
+        self.x = 800
+        self.y = 500
     def update(self):
         pass
     def draw(self):
